@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <title>Responsive Food Delivery Dashboard</title>
+</head>
+<body>
+    <input type="checkbox" id="cart">
+    <label for="cart" class="label-cart">
+        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+    </label>
+
+    <h1 class="logo">Food Delivery Services</h1>
+
+    <div class="sidebar">
+        <div class="sidebar-menu">
+            <span class="fa fa-search" aria-hidden="true"></span>
+            <a href="#">Search</a>
+        </div>
+        <div class="sidebar-menu">
+            <span class="fa fa-home" aria-hidden="true"></span>
+            <a href="#">Home</a>
+        </div>  
+        <div class="sidebar-menu">
+            <span class="fa fa-heart" aria-hidden="true"></span>
+            <a href="#">Favorites</a>
+        </div>  
+        <div class="sidebar-menu">
+            <span class="fa fa-user" aria-hidden="true"></span><br>
+            <a href="#">Profile</a>
+        </div>
+        <div class="sidebar-menu">
+            <span class="fa fa-sliders" aria-hidden="true"></span>
+            <a href="#">Setting</a>
+        </div>
+    </div>
+
+    <div class="dashboard">
+        <div class="dashboard-banner">
+            <img src="saled.jpg">
+            
+            <div class="banner-promo">
+                <h1><span>50% OFF</span><br>
+                    Tasty Food<br>On Your Hand
+                </h1>
+            </div>
+        </div>
+        <h3 class="dashboard-title">Recommend Food For You</h3>
+        <div class="dashboard-menu">
+            <a href="#">Favorites</a>
+            <a href="#">Best Seller</a>
+            <a href="#">Near Me</a>
+            <a href="#">Promotion</a>
+            <a href="#">Top Rated</a>
+            <a href="#">All</a>
+        </div>
+        <div class="dashboard-content">
+            <div class="dashboard-card">
+                <img  src="pizza.jpg" width="100%" height="70%">
+                <div class="card-detail">
+                    <h2>Amazing Pizza<span>₹300</span></h2>
+                    <p class="card-time"><span class="fa fa-clock-o" aria-hidden="true"></span>15-30min
+                    </p>
+                </div>
+            </div>
+            <div class="dashboard-card">
+                <img  src="momos.jpg" width="100%" height="70%">
+                <div class="card-detail">
+                    <h2>Wow!Momo<span>₹159</span></h2>
+                    <p class="card-time"><span class="fa fa-clock-o" aria-hidden="true"></span>15-30min
+                    </p>
+                </div>
+            </div>    
+            <div class="dashboard-card">
+                <img  src="noodles.webp" width="100%" height="70%">
+                <div class="card-detail">
+                    <h2>Veg Noodles<span>₹209</span></h2>
+                    <p class="card-time"><span class="fa fa-clock-o" aria-hidden="true"></span>15-30min
+                    </p>
+                </div>
+            </div>        
+            <div class="dashboard-card">
+                <img src="dosa.jpg" width="100%" height="70%">
+                <div class="card-detail">
+                    <h2>Masala Dosha<span>₹170</span></h2>
+                    <p class="card-time"><span class="fa fa-clock-o" aria-hidden="true"></span>15-30min
+                    </p>
+                </div>
+            </div>        
+            <div class="dashboard-card">
+                <img  src="burger.jpg" width="100%" height="70%">
+                <div class="card-detail">
+                    <h2>Hot 'n' Cheezy Burger<span>₹120</span></h2>
+                    <p class="card-time"><span class="fa fa-clock-o" aria-hidden="true"></span>15-30min
+                    </p>
+                </div>
+            </div> 
+            <div class="dashboard-card">
+                <img  src="paratha.jpg" width="100%" height="70%">
+                <div class="card-detail">
+                    <h2>Paratha<span>₹160</span></h2>
+                    <p class="card-time"><span class="fa fa-clock-o" aria-hidden="true"></span>15-30min
+                    </p>
+                </div>
+            </div> 
+            </div>
+            </div>
+
+
+            <div class="dashboard-order">
+                <h3>Order Menu</h3>
+                <div class="order-address">
+                    <p>Address Delivery</p>
+                    <h4>Hot 'N' Fresh , Rajkot</h4>
+                </div>
+                <div class="order-time">
+                    <span class="fa fa-clock-o" aria-hidden="true"></span>30 mins
+                    <span class="fa fa-map-marker" aria-hidden="true"></span>2 km
+                </div>
+
+                <div class="order-wrapper">
+
+                    <div class="order-card">
+                        <img class="order-image" src="pizza1.webp">
+                        <div class="order-detail">
+                            <i class="fa fa-times" aria-hidden="true"></i>
+                            <input type="text" value="1">
+                        </div>
+                        <h4 class="order-price">₹650</h4>
+                    </div>
+                    <div class="order-card">
+                        <img class="order-image" src="gujrati.avif">
+                        <div class="order-detail">
+                            <i class="fa fa-times" aria-hidden="true"></i>
+                            <input type="text" value="2">
+                        </div>
+                        <h4 class="order-price">₹499</h4>
+                    </div>
+                    <hr class="divider">
+                    <div class="order-total">
+                        <p>Subtotal <span>₹1149</span></p>
+                        <p>Tax(10%)<span>114.9</span></p>
+                        <p>Delivery Fee<span>₹360</span></p>
+
+                        <div class="order-promo">
+                            <input class="input-promo" type="text" placeholder="Apply Voucher">
+                            <button class="button-promo">Find Promo</button>
+                        </div>
+                        <hr class="divider">
+                        <p>Total<span>₹1167</span></p>
+                    </div>
+                    <button class="checkout">checkout</button>
+                    
+                </div>
+            </div>
+    </body>
+</html>  
